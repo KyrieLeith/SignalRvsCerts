@@ -217,7 +217,7 @@ namespace WPFServer
                 computerCaStore.Close();
             }
             if (certid-1>=0 && certid-1<certs.Count)
-                Clients.Caller.displayCert(certs[certid]);
+                Clients.Caller.displayCert(certs[certid-1]);
         }
         public override Task OnConnected()
         {
